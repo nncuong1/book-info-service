@@ -1,4 +1,4 @@
-package io.nnc.bookinfoservice.service;
+package io.nnc.bookinfoservice.service.book;
 
 import io.nnc.bookinfoservice.model.Book;
 import java.util.Optional;
