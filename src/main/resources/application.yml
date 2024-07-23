@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/goodreadbooks?useSSL=false
+    username: root
+    password: root
+    hikari:
+      idle-timeout: 1800000
+      connection-timeout: 10000
+      max-lifetime: 7200000
+      maximum-pool-size: 10
+      minimum-idle: 20
+      pool-name: Book-HikariPool
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  profiles:
+    active: dev
+logging:
+  level:
+    io.nnc: DEBUG
+    com.zaxxer.hikari.HikariConfig: DEBUG
+    com.zaxxer.hikari: TRACE
+server:
+  port: 8080
