@@ -1,7 +1,7 @@
 package io.nnc.bookinfoservice.controller;
 
 import io.nnc.bookinfoservice.model.Book;
-import io.nnc.bookinfoservice.service.BooksService;
+import io.nnc.bookinfoservice.service.book.BooksService;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

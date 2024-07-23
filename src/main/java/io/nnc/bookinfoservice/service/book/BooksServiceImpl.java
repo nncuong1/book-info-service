@@ -1,9 +1,8 @@
-package io.nnc.bookinfoservice.service.impl;
+package io.nnc.bookinfoservice.service.book;
 
 import io.nnc.bookinfoservice.entity.BookEntity;
 import io.nnc.bookinfoservice.model.Book;
 import io.nnc.bookinfoservice.repository.BooksRepository;
-import io.nnc.bookinfoservice.service.BooksService;
 import io.nnc.bookinfoservice.util.CompletableFutureUtils;
 import io.nnc.bookinfoservice.util.ModelMapperUtils;
 import java.util.*;
