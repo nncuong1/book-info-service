@@ -32,4 +32,28 @@ public class PascalTriangle {
 
     return results;
   }
+
+  public List<List<Integer>> generateByTwoPointer(int numRows) {
+    List<List<Integer>> results = new ArrayList<>();
+    results.add(List.of(1));
+
+    for (int i = 0; i < numRows - 1; i++) {
+      List<Integer> last = results.get(results.size() - 1);
+
+      List<Integer> temps = new ArrayList<>();
+      temps.add(0);
+      temps.addAll(last);
+      temps.add(0);
+
+      int lengthOfLast = last.size();
+      List<Integer> row = new ArrayList<>();
+      for (int j = 0; j < lengthOfLast + 1; j++) {
+        row.add(temps.get(j) + temps.get(j + 1));
+      }
+
+      results.add(row);
+    }
+
+    return results;
+  }
 }
